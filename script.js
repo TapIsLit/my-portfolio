@@ -60,15 +60,6 @@ skillCards.forEach(card => {
     });
 });
 
-// Matrix rain effect in background (optional)
-const canvas = document.createElement('canvas');
-canvas.style.position = 'fixed';
-canvas.style.top = '0';
-canvas.style.left = '0';
-canvas.style.zIndex = '2';
-canvas.style.opacity = '0.05';
-canvas.style.pointerEvents = 'none';
-
 // Add some interactive glitch effect on click
 document.addEventListener('click', (e) => {
     const glitch = document.createElement('div');
