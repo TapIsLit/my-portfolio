@@ -476,3 +476,46 @@ body {
             drop-shadow(0 0 40px rgba(255, 0, 110, 0.4));
     animation: logoFloat 3s ease-in-out infinite;
 }
+.accomplices-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--neon-pink);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+}
+
+.accomplices-title {
+    color: var(--neon-pink);
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.accomplices-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.accomplice {
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.2) 0%, rgba(0, 240, 255, 0.1) 100%);
+    border: 1px solid var(--neon-pink);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.accomplice:hover {
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.4) 0%, rgba(0, 240, 255, 0.2) 100%);
+    border-color: var(--neon-cyan);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.6);
+}
